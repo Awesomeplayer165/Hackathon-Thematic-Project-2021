@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="kH9-CJ-CV6">
+    <device id="mac" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--AuthenticationHome-->
+        <scene sceneID="686-fe-oh4">
+            <objects>
+                <viewController title="AuthenticationHome" modalPresentationStyle="overCurrentContext" id="kH9-CJ-CV6" customClass="ViewController" customModule="Banking_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tLY-aV-OBW">
+                        <rect key="frame" x="0.0" y="0.0" width="800" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Banking" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eum-Ib-ukI">
+                                <rect key="frame" x="289" y="20" width="222" height="84"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="222" id="VV1-e7-Mg8"/>
+                                    <constraint firstAttribute="height" constant="84" id="gzF-78-jFT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="33"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pUp-fL-POb">
+                                <rect key="frame" x="367" y="226" width="67" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="PV3-t8-fog"/>
+                                    <constraint firstAttribute="width" constant="67" id="jbi-OJ-Arc"/>
+                                </constraints>
+                                <state key="normal" title="Log In"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R3a-Ea-M0B">
+                                <rect key="frame" x="367" y="265" width="73" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="73" id="2Mr-6U-CKq"/>
+                                    <constraint firstAttribute="height" constant="31" id="Rpb-VD-oz7"/>
+                                </constraints>
+                                <state key="normal" title="Sign Up"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1EP-v6-QOp">
+                                <rect key="frame" x="334" y="304" width="139" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="hjD-Dg-0p0"/>
+                                    <constraint firstAttribute="width" constant="139" id="oa3-gD-Vtj"/>
+                                </constraints>
+                                <state key="normal" title="Forgot Password"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6bR-ff-czf"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Eum-Ib-ukI" firstAttribute="top" secondItem="6bR-ff-czf" secondAttribute="top" constant="20" id="1BF-kV-DoJ"/>
+                            <constraint firstItem="pUp-fL-POb" firstAttribute="top" secondItem="Eum-Ib-ukI" secondAttribute="bottom" constant="122" id="1E1-Cm-kxe"/>
+                            <constraint firstItem="6bR-ff-czf" firstAttribute="trailing" secondItem="1EP-v6-QOp" secondAttribute="trailing" constant="327" id="FqJ-xm-YFf"/>
+                            <constraint firstItem="6bR-ff-czf" firstAttribute="trailing" secondItem="pUp-fL-POb" secondAttribute="trailing" constant="366" id="JZL-8z-sn7"/>
+                            <constraint firstItem="6bR-ff-czf" firstAttribute="trailing" secondItem="Eum-Ib-ukI" secondAttribute="trailing" constant="289" id="Lph-dl-v6a"/>
+                            <constraint firstItem="R3a-Ea-M0B" firstAttribute="leading" secondItem="6bR-ff-czf" secondAttribute="leading" constant="367" id="Mn8-yB-ZJu"/>
+                            <constraint firstItem="1EP-v6-QOp" firstAttribute="leading" secondItem="6bR-ff-czf" secondAttribute="leading" constant="334" id="Tkq-0M-nDV"/>
+                            <constraint firstItem="1EP-v6-QOp" firstAttribute="top" secondItem="R3a-Ea-M0B" secondAttribute="bottom" constant="8" symbolic="YES" id="eXV-TM-8gB"/>
+                            <constraint firstItem="1EP-v6-QOp" firstAttribute="top" secondItem="R3a-Ea-M0B" secondAttribute="bottom" constant="8" symbolic="YES" id="h1Y-lg-Nsu"/>
+                            <constraint firstItem="pUp-fL-POb" firstAttribute="leading" secondItem="6bR-ff-czf" secondAttribute="leading" constant="367" id="hmk-9T-DPk"/>
+                            <constraint firstItem="R3a-Ea-M0B" firstAttribute="top" secondItem="pUp-fL-POb" secondAttribute="bottom" constant="8" symbolic="YES" id="qLZ-oU-lHA"/>
+                            <constraint firstItem="6bR-ff-czf" firstAttribute="trailing" secondItem="R3a-Ea-M0B" secondAttribute="trailing" constant="360" id="ttI-Nb-RQA"/>
+                            <constraint firstItem="R3a-Ea-M0B" firstAttribute="top" secondItem="pUp-fL-POb" secondAttribute="bottom" constant="8" symbolic="YES" id="xx7-j0-348"/>
+                            <constraint firstItem="Eum-Ib-ukI" firstAttribute="leading" secondItem="6bR-ff-czf" secondAttribute="leading" constant="289" id="xyQ-o4-UQz"/>
+                        </constraints>
+                    </view>
+                    <value key="contentSizeForViewInPopover" type="size" width="800" height="600"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="idv-3K-1mC" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="99"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
