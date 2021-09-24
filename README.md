@@ -1,4 +1,4 @@
-# Hackathon-Thematic-Project-2021
+# Hackathon Thematic Project 2021
 
 This project shows the Hackathon Thematic Project done in 2021.
 
